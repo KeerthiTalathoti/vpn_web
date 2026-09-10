@@ -5,7 +5,7 @@
  * when releasing new binaries.
  */
 
-export const DOWNLOAD_WINDOWS_URL = "/IPsec.VPN.Analyzer.Setup.0.0.0.exe";
+export const DOWNLOAD_WINDOWS_URL = "https://github.com/LalThota/vpn-ipsec-analyzer/releases/download/v1.0.0/IPsec.VPN.Analyzer.Setup.0.0.0.exe";
 export const DOWNLOAD_MACOS_URL = "https://github.com/vpn-analyzer/vpn-analyzer/releases/download/v2.4.1/VPN-Analyzer-2.4.1.dmg";
 export const DOWNLOAD_LINUX_URL = "https://github.com/charan242726/Linux-Desktop-ipsec-vpn-Analyzer";
 export const GITHUB_REPO_URL = "https://github.com/vpn-analyzer/vpn-analyzer";
