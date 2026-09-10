@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
-import { MlAnalysisDemo } from './components/MlAnalysisDemo';
 import { WhatIsVpnAnalyzer } from './components/WhatIsVpnAnalyzer';
 import { DownloadSection } from './components/DownloadSection';
 import { PermissionsSection } from './components/PermissionsSection';
@@ -39,9 +38,6 @@ export function App() {
 
         {/* Hero Section with Interactive Visual */}
         <Hero />
-
-        {/* Interactive ML PCAP Upload Demo */}
-        <MlAnalysisDemo />
 
         {/* What does VPN Analyzer do? (4 Cards) */}
         <WhatIsVpnAnalyzer />
