@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Upload, FileCode, Activity, ShieldAlert, CheckCircle, AlertTriangle, ShieldCheck, Database, BrainCircuit, X } from 'lucide-react';
+import { Upload, FileCode, Activity, ShieldAlert, AlertTriangle, ShieldCheck, Database, BrainCircuit, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 type AnalysisState = 'idle' | 'analyzing' | 'complete';
