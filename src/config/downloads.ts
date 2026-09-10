@@ -5,9 +5,9 @@
  * when releasing new binaries.
  */
 
-export const DOWNLOAD_WINDOWS_URL = "https://github.com/vpn-analyzer/vpn-analyzer/releases/download/v2.4.1/VPN-Analyzer-Setup-2.4.1.exe";
+export const DOWNLOAD_WINDOWS_URL = "/IPsec.VPN.Analyzer.Setup.0.0.0.exe";
 export const DOWNLOAD_MACOS_URL = "https://github.com/vpn-analyzer/vpn-analyzer/releases/download/v2.4.1/VPN-Analyzer-2.4.1.dmg";
-export const DOWNLOAD_LINUX_URL = "https://github.com/vpn-analyzer/vpn-analyzer/releases/download/v2.4.1/VPN-Analyzer-2.4.1-x86_64.AppImage";
+export const DOWNLOAD_LINUX_URL = "https://github.com/charan242726/Linux-Desktop-ipsec-vpn-Analyzer";
 export const GITHUB_REPO_URL = "https://github.com/vpn-analyzer/vpn-analyzer";
 
 export interface OSConfig {
@@ -35,9 +35,9 @@ export const OS_DOWNLOADS: OSConfig[] = [
     downloadUrl: DOWNLOAD_WINDOWS_URL,
     fileFormat: '.EXE',
     architecture: 'x64 (64-bit)',
-    version: 'v2.4.1 (Stable)',
-    fileSize: '48.2 MB',
-    sha256: '9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08',
+    version: 'v0.0.0',
+    fileSize: '335.5 MB',
+    sha256: '',
     command: 'winget install VPNAnalyzer.LocalEngine',
     features: [
       'PCAP & PCAPNG analysis',
@@ -53,12 +53,12 @@ export const OS_DOWNLOADS: OSConfig[] = [
     subName: 'Linux x86_64',
     osRequirement: 'Modern Linux Distribution (Kernel 5.4+)',
     downloadUrl: DOWNLOAD_LINUX_URL,
-    fileFormat: '.AppImage / .deb / .rpm',
-    architecture: 'x86_64',
-    version: 'v2.4.1 (Stable)',
-    fileSize: '42.8 MB',
-    sha256: 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855',
-    command: 'curl -fsSL https://vpn-analyzer.org/install.sh | sh',
+    fileFormat: 'GitHub Repo',
+    architecture: 'x86_64 / ARM',
+    version: 'Source',
+    fileSize: '-',
+    sha256: '',
+    command: 'git clone https://github.com/charan242726/Linux-Desktop-ipsec-vpn-Analyzer.git',
     highlighted: true, // VISUALLY HIGHLIGHTED DEFAULT CARD AS REQUESTED
     features: [
       'PCAP & PCAPNG analysis',

@@ -116,7 +116,7 @@ export const DownloadSection: React.FC = () => {
                     }`}
                   >
                     <Download className="w-4 h-4" />
-                    <span>Download for {item.name}</span>
+                    <span>{item.id === 'linux' ? 'View Instructions on GitHub' : `Download for ${item.name}`}</span>
                   </a>
 
                   {/* Quick Terminal Command Copy Box */}
@@ -143,15 +143,19 @@ export const DownloadSection: React.FC = () => {
                   </div>
 
                   {/* SHA-256 Checksum Button */}
-                  <div className="mt-3 flex items-center justify-between text-[10px] font-mono text-slate-400">
-                    <span className="truncate max-w-[180px]">SHA256: {item.sha256.substring(0, 12)}...</span>
-                    <button
-                      onClick={() => copyToClipboard(item.sha256, item.id, false)}
-                      className="text-cyan-400 hover:underline flex items-center gap-1"
-                    >
-                      {copiedId === item.id ? 'Copied Hash!' : 'Copy SHA256'}
-                    </button>
-                  </div>
+                  {item.sha256 ? (
+                    <div className="mt-3 flex items-center justify-between text-[10px] font-mono text-slate-400">
+                      <span className="truncate max-w-[180px]">SHA256: {item.sha256.substring(0, 12)}...</span>
+                      <button
+                        onClick={() => copyToClipboard(item.sha256, item.id, false)}
+                        className="text-cyan-400 hover:underline flex items-center gap-1"
+                      >
+                        {copiedId === item.id ? 'Copied Hash!' : 'Copy SHA256'}
+                      </button>
+                    </div>
+                  ) : (
+                    <div className="mt-3 h-[20px]"></div>
+                  )}
                 </div>
               </div>
             );
